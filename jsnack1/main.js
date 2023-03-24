@@ -66,16 +66,18 @@ const zucchine = [
 
 //calcolo il peso totale
 
-const {Number(peso)} = zucchine
-console.log(peso)
+//recupero il dato del peso
+
+const {peso} = zucchine
 
 
-function sumWeight(...weight){
-    let sum = 0;
+let sum = 0;
+function sumWeight(...peso){
+    
     params.forEach(numb => {
         sum += numb
     })
     return sum
 }
 
-console.log(sumWeight(peso))
+console.log(sum(peso))
