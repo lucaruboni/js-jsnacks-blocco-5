@@ -12,4 +12,25 @@ const array = [
     5
 ]
 
-const number1 = 
+const {number} = array
+console.log(array)
+
+const numberA = 1
+
+const numberB = 5
+
+
+function getArray(array, number1, number2){
+    let newarray
+    array.forEach(number => {
+       
+       
+        if (number > number1 && number < number2) {
+             newarray = {number}
+        }
+        return newarray
+    });
+    console.log(newarray)
+}
+
+getArray(array, numberA, numberB)
